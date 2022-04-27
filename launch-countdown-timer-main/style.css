@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Darkdesaturatedblue: hsl(236, 21%, 26%);
+    --Verydarkblue: hsl(235, 16%, 14%);
+    --Verydarkmostly-black-blue: hsl(234, 17%, 12%);
+    --Grayishblue: hsl(237, 18%, 59%);
+    --Softred: hsl(345, 95%, 68%);
+
+}
+
+html{
+    font-size: 10px;
+}
+
+
+body{
+    background: url(./images/pattern-hills.svg) no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    background-color: var(--Verydarkmostly-black-blue);
+}
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding: 0 3rem;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.timers{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem
+}
+.timers > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem
+}
+
+.time{
+    background-color: var(--Darkdesaturatedblue);
+    border-radius: 1rem;
+    padding: 3rem;
+    color: var(--Softred);
+    font-size: 10rem;
+}
+
+h3{
+    font-size: 4rem;
+    color: var(--Grayishblue);
+    text-transform: uppercase;
+}
+
+span{
+    font-size: 3rem;
+    color: var(--Grayishblue);
+}
+
+.socials > *{
+    margin: 1.5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width:764px) {
+    
+
+body{
+    background: url(./images/bg-stars.svg) no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    background-color: var(--Verydarkmostly-black-blue);
+}
+.timers{
+    flex-direction: column;
+}
+}
+
+
+
